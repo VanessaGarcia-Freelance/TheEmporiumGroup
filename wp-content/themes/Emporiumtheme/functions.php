@@ -1,7 +1,16 @@
 <?php // Opening PHP tag - nothing should be before this, not even whitespace
 
+
+//adding styles from parent the
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
 }
+
+
+//using SVGs inside the media library
+function svg_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;}
+add_filter( 'upload_mimes', 'svg_mime_types' );

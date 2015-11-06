@@ -14,3 +14,9 @@ function svg_mime_types( $mimes ){
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;}
 add_filter( 'upload_mimes', 'svg_mime_types' );
+
+
+// Add custom font to font settings
+function wpex_add_custom_fonts() {
+    return array( 'DINPro-Black', 'DINPro-Bold', 'DINPro-Medium', 'DINPro-Light', 'emporium' );
+}

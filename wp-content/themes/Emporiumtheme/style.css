@@ -19,6 +19,10 @@ h1 {
     color: #002a55;
     font-size: 24px;
 }
+a {
+    text-transform: uppercase;
+    font-family: 'DINPro-Black';
+}
 
 /* HEADER */
 header {
@@ -72,6 +76,37 @@ header {
     color: #002a55;
 }
 
+/* Homepage */
+#what-we-do-promo h2:before {
+    font-size: 34px;
+    padding-right: 2px;
+    vertical-align: middle;
+}
+
+#what-we-do-promo .wpb_wrapper a {
+    line-height: 13px;
+}
+
+#what-we-do-promo .wpb_wrapper a:before {
+    font-family: 'emporium';
+    content: "\e901";
+    font-size: 34px;
+    padding-right: 4px;
+    position: relative;
+    bottom: 2px;
+}
+#what-we-do-promo .wpb_wrapper a:hover:before {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#our-work-promo {
+
+}
+
+#our-blog-promo {
+
+}
 
 /* Footer */
 

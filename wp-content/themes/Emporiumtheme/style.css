@@ -197,6 +197,10 @@ header {
 }
 
 /* Footer */
+.footer-builder-content h2 {
+    border-top: 3px solid #002a55;
+    padding-top: 20px;
+}
 
 .footer-builder-content h2, .footer-builder-content h3 {
     color: #002a55;

@@ -198,8 +198,18 @@ header {
 
 /* Footer */
 
-.email {
+.footer-builder-content h2, .footer-builder-content h3 {
+    color: #002a55;
+    font-size: 24px;
+}
+.footer-builder-content p {
+    color: #002a55;
+}
+
+.email.vcex-heading {
     font-family: "DINPro-Bold";
+    font-size: 30px;
+    text-transform: lowercase;
 }
 .email .arial {
     font-family: Arial, Helvetica, sans-serif;

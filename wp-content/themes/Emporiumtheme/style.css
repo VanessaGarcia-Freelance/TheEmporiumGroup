@@ -14,6 +14,9 @@
 
 @import url('fonts/fonts.css');
 
+body {
+    border-bottom: 10px solid #002a55;
+}
 
 h1 {
     color: #002a55;
@@ -81,6 +84,50 @@ header {
 }
 
 
+/* Homepage */
+#our-blog-promo .entry-media {
+    -webkit-clip-path: polygon(0 0, 0 100%, 80% 0, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 80% 0, 100% 0);
+}
+
+#our-blog-promo .vcex-blog-entry {
+    position: relative;
+}
+#our-blog-promo .entry-details {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: none;
+}
+#our-blog-promo .vcex-blog-entry-date {
+    display: none;
+}
+
+#our-blog-promo .vcex-blog-entry-excerpt{
+    font-size: 10px;
+    color: #002856;
+}
+
+
+#our-blog-promo .vcex-blog-entry-readmore-wrap {
+    text-align: right;
+}
+
+#our-blog-promo .vcex-blog-entry-readmore-wrap a {
+    background: transparent;
+    font-size: 8px;
+    font-family: 'DINPro-Black';
+    color:#002856;
+}
+#our-blog-promo .vcex-blog-entry-readmore-wrap a:after{
+    font-family: 'emporium';
+    content: "\e901";
+    font-size: 33px;
+    vertical-align: baseline;
+    line-height: 0;
+}
+
 /* Porfolio */
 .portfolio-entry-inner {
     position: relative;
@@ -114,24 +161,35 @@ header {
     font-size: 50px;
     vertical-align: middle;
 }
-.portfolio_category-strategy h2:before{
+.portfolio_category-strategy h2:before, .single-portfolio .page-header-title.strategy:before{
+    font-family: 'emporium';
     content: "\e907";
 }
-.portfolio_category-video-production h2:before{
+.portfolio_category-video-production h2:before, .single-portfolio .page-header-title.video-production:before{
+    font-family: 'emporium';
     content: "\e908";
 }
-.portfolio_category-marketing h2:before {
+.portfolio_category-marketing h2:before, .single-portfolio .page-header-title.marketing:before {
     font-family: 'emporium';
     content: "\e90c";
 }
-.portfolio_category-optimization h2:before {
+.portfolio_category-optimization h2:before, .single-portfolio .page-header-title.optimization:before {
+    font-family: 'emporium';
     content: "\e902";
 }
-.portfolio_category-implementation h2:before {
+.portfolio_category-implementation h2:before, .single-portfolio .page-header-title.implementation:before {
+    font-family: 'emporium';
     content: "\e905";
 }
 .portfolio_category-analysis h2:before {
+    font-family: 'emporium';
     content: "\e90a";
+}
+
+.page-header-title:before {
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: bottom;
 }
 
 .portfolio-entry-excerpt{
@@ -195,6 +253,20 @@ header {
 #our-blog-promo {
 
 }
+
+.more-link a {
+    font-family: 'DINPro-Light';
+}
+
+
+/* PORTFOLIO */
+/*.single-portfolio .page-header-title.marketing {
+
+}*/
+
+
+
+
 
 /* Footer */
 .footer-builder-content h2 {

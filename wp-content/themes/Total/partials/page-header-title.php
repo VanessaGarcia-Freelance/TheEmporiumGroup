@@ -37,6 +37,13 @@ else {
 if ( ! in_array( get_post_type(), wpex_theme_post_types() ) ) {
 	$schema_markup = null;
 }
+$additionalClasses = '';
+$portCat = get_the_terms( get_the_ID(), 'portfolio_category'); 
+//echo print_r($portCat);
+//echo $portCat[0]->name;
+if(!empty($portCat)) {
+    $additionalClasses = $portCat[0]->slug;
+}
 
 // Display title
-echo '<'. $tag .' class="page-header-title"'. $schema_markup .'>'. $title .'</'. $tag .'>';
+echo '<'. $tag .' class="page-header-title '.$additionalClasses.'"'. $schema_markup .'>'. $title .'</'. $tag .'>';

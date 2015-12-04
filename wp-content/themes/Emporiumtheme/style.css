@@ -61,6 +61,19 @@ header {
 }
 #site-navigation .dropdown-menu ul a {
     padding: 5px;
+
+}
+#site-navigation ul li a:after {
+    content: "\f107";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0;
+}
+#site-navigation ul li a:hover:after {
+    opacity: 1;
 }
 
 #site-header #site-navigation .dropdown-menu ul >li >a {
@@ -96,7 +109,7 @@ header {
 #our-blog-promo .entry-details {
     width: 50%;
     position: absolute;
-    right: 0;
+    right: 10%;
     top: 50%;
     border: none;
 }
@@ -118,7 +131,12 @@ header {
     background: transparent;
     font-size: 8px;
     font-family: 'DINPro-Black';
-    color:#002856;
+    color:#002a55;
+}
+#our-blog-promo .vcex-blog-entry-readmore-wrap a:hover {
+    background-color: #002a55;
+    color:#fff;
+    transition: all 0.25s ease-in-out;
 }
 #our-blog-promo .vcex-blog-entry-readmore-wrap a:after{
     font-family: 'emporium';
@@ -156,32 +174,32 @@ header {
 .portfolio-entry h2 a:hover {
     color: white;
 }
-.portfolio-entry h2:before {
+.portfolio-entry h2 a:before {
     font-family: 'emporium';
     font-size: 50px;
     vertical-align: middle;
 }
-.portfolio_category-strategy h2:before, .single-portfolio .page-header-title.strategy:before{
+.portfolio_category-strategy h2 a:before, .single-portfolio .page-header-title.strategy:before{
     font-family: 'emporium';
     content: "\e907";
 }
-.portfolio_category-video-production h2:before, .single-portfolio .page-header-title.video-production:before{
+.portfolio_category-video-production h2 a:before, .single-portfolio .page-header-title.video-production:before{
     font-family: 'emporium';
     content: "\e908";
 }
-.portfolio_category-marketing h2:before, .single-portfolio .page-header-title.marketing:before {
+.portfolio_category-marketing h2 a:before, .single-portfolio .page-header-title.marketing:before {
     font-family: 'emporium';
     content: "\e90c";
 }
-.portfolio_category-optimization h2:before, .single-portfolio .page-header-title.optimization:before {
+.portfolio_category-optimization h2 a:before, .single-portfolio .page-header-title.optimization:before {
     font-family: 'emporium';
     content: "\e902";
 }
-.portfolio_category-implementation h2:before, .single-portfolio .page-header-title.implementation:before {
+.portfolio_category-implementation h2 a:before, .single-portfolio .page-header-title.implementation:before {
     font-family: 'emporium';
     content: "\e905";
 }
-.portfolio_category-analysis h2:before {
+.portfolio_category-analysis h2 a:before {
     font-family: 'emporium';
     content: "\e90a";
 }
@@ -221,6 +239,11 @@ header {
     line-height: 0;
 }
 
+.portfolio-entry-readmore-wrap a:hover {
+    background-color: #fff;
+    color: #002a55;
+}
+
 
 /* Homepage */
 #what-we-do-promo h2:before {
@@ -231,6 +254,7 @@ header {
 
 #what-we-do-promo .wpb_wrapper a {
     line-height: 13px;
+    padding: 10px;
 }
 
 #what-we-do-promo .wpb_wrapper a:before {
@@ -240,6 +264,12 @@ header {
     padding-right: 4px;
     position: relative;
     bottom: 2px;
+}
+#what-we-do-promo .wpb_wrapper a:hover {
+    transition: all 0.25s ease-in-out;
+    background-color: #002a55;
+    color: #fff;
+    text-decoration: none;
 }
 #what-we-do-promo .wpb_wrapper a:hover:before {
     text-decoration: none;
@@ -264,6 +294,10 @@ header {
 
 }*/
 
+
+.vc_custom_1419240516480 {
+    background-color:transparent;
+}
 
 
 
@@ -290,4 +324,21 @@ header {
 .email .arial {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+.post-button a.vc_btn3.vc_btn3-size-md {
+    padding-left: 0px;
+
+}
+.post-button a.vc_btn3.vc_btn3-size-md:hover {
+    background-color: white;
+    /*text-decoration: underline;*/
+    background-position: 0 -100%;
+}
+
+.post-button a.vc_btn3.vc_btn3-size-md:hover .vc_btn3-icon {
+    right: 15px;
+}
+#our-blog-promo .wpex-row .span_1_of_2 {
+    padding: 20px 70px;
 }

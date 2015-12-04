@@ -28,11 +28,6 @@ get_header(); ?>
 				<?php wpex_hook_content_top(); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="category">
-							<?php $categories = get_the_category($id = false);
-	 						echo get_the_term_list( get_the_ID(), 'portfolio_category', "Category: " ); 
-	 						?>
-						</div>
 
 						<?php get_template_part( 'partials/portfolio/portfolio-single-layout' ); ?>
 

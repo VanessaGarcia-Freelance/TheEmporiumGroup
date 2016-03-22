@@ -33,7 +33,7 @@ get_header(); ?>
 
 					<?php endwhile; ?>
 
-					<div class="vc_btn3-container  more-link vc_btn3-center"><a style="background-color:#ffffff; color:#002856;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-custom vc_btn3-icon-right" href="/portfolio" title="" target="_self">More Work <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a></div>
+					<div class="vc_btn3-container  more-link vc_btn3-center"><a style="background-color:#ffffff; color:#002856;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-custom vc_btn3-icon-right" href="/research" title="" target="_self">More Work <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a></div>
 
 				<?php wpex_hook_content_bottom(); ?>
 

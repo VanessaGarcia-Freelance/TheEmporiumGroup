@@ -20,3 +20,9 @@ add_filter( 'upload_mimes', 'svg_mime_types' );
 function wpex_add_custom_fonts() {
     return array( 'DINPro-Black', 'DINPro-Bold', 'DINPro-Medium', 'DINPro-Light', 'emporium' );
 }
+
+
+add_action( 'wp_enqueue_scripts', 'child_functions_enqueue_scripts' );
+function child_functions_enqueue_scripts() {
+    wp_enqueue_script( 'child_functions', get_stylesheet_directory_uri() . '/js/child-functions.js', '', '', true );
+}

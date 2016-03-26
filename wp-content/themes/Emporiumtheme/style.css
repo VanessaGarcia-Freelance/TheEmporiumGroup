@@ -20,6 +20,10 @@
 }
 
 
+div.wpcf7 .wpcf7-mail-sent-ok {
+    clear: both;
+}
+
 body {
     border-bottom: 10px solid #002a55;
 }

@@ -589,3 +589,38 @@ header {
 #our-blog-promo .wpex-row .span_1_of_2 {
     padding: 20px 70px;
 }
+.vcex-blog-grid-wrap .vcex-blog-entry-date, .vcex-blog-grid-wrap .vcex-blog-entry-excerpt, .vcex-blog-grid-wrap .vcex-blog-entry-readmore-wrap {
+    display: none;
+}
+
+.vcex-blog-grid-wrap .vcex-blog-entry-details {
+    border: none;
+    padding: 10px 0;
+}
+.vcex-blog-grid-wrap .vcex-blog-entry-title {
+    font-size: 12px;
+}
+
+.single-post #post-media, .single-post .single-post-title {
+    display: none;
+}
+
+.single-post .wrap-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+.single-post .related-post-excerpt {
+    display: none;
+}
+
+.single-post .related-post-content {
+    background: none;
+    border: none;
+}
+.single-post .page-header-title {
+    display: none;
+}
+
+.theme-heading span.text:after {
+    border-bottom: none;
+}
